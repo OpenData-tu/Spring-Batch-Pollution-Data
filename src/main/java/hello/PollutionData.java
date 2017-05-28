@@ -42,6 +42,18 @@ public class PollutionData extends Schema {
         return ";";
     }
 
+
+    @Override
+    public void process() {
+
+        System.out.println(stationName.toUpperCase());
+    }
+
+    @Override
+    public void preProcess() {
+        // TODO remove first lines
+    }
+
     public PollutionData(String stationCode, String stationName, int dailyMean, String measuringMethod, String firstMeasuringDate,
                          String recentMeasuringDate, int jan, int feb, int mar, int apr, int may, int jun, int july, int aug,
                          int sep, int oct, int nov, int dec) {

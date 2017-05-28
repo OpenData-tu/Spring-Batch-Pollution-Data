@@ -8,4 +8,9 @@ public abstract class Schema {
     public abstract String [] getClassVariableNames();
 
     public abstract String getDelimiter();
+
+
+    public abstract void process();
+
+    public abstract void preProcess();
 }
